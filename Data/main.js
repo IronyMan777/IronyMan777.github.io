@@ -1,19 +1,18 @@
 var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
-  
-charx = 400;
-chary = 300;
-
-keys = [];
-keyPressed = function() {
-	keys[keyCode] = true;
-};
-keyReleased = function() {
-	keys[keyCode] = false;
-};
-
 setup = function() {
+	charx = 400;
+	chary = 300;
+
+	keys = [];
+	keyPressed = function() {
+		keys[keyCode] = true;
+	};
+	keyReleased = function() {
+		keys[keyCode] = false;
+	};
+	
 	img1=loadImage("Images/char1.jpg");
 	size(800,600);
 	frameRate(60);
