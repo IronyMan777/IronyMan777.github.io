@@ -13,7 +13,7 @@ setup = function() {
 		keys[keyCode] = false;
 	};*/
 	
-	img1=loadImage("Data/Images/char1.jpg");
+	img1=loadImage("Data/Images/char2.jpg");
 	size(800,600);
 	frameRate(60);
 	angleMode = "degrees";
