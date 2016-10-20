@@ -2,7 +2,7 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
   
-charpos = {
+var charpos = {
 	x:0,
 	y:0
 };
