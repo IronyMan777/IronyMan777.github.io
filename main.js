@@ -14,7 +14,7 @@ var knife = {
 
 
 setup = function() {
-
+  size(800,600);
 };
 
 draw = function() {
