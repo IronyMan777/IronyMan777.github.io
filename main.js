@@ -6,11 +6,13 @@ setup = function() {
   img1=loadImage("Ship1.png");
   size(800,600);
   frameRate(60);
+  angle = 0;
 };
 
 draw = function() {
   background(20);
-  angle = atan2(mouseY,pmouseY,mouseX,pmouseX);
+  a = atan2(mouseY,pmouseY,mouseX,pmouseX);
+  angle += a;
   pushMatrix();
     translate(mouseX,mouseY);
     rotate(angle);
