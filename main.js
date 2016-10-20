@@ -1,17 +1,12 @@
 // Stay dangereous.
 
 var char = {
-  img1:loadImage("Character concept 2.png");
+  img1:loadImage("Character concept 2.png"),
   x:0,
   y:0,
   health:100,
   inventory:{}
 };
-
-var knife = {
-
-};
-
 
 setup = function() {
   size(800,600);
