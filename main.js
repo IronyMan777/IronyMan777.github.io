@@ -16,7 +16,7 @@ draw = function() {
   angle += a;
   pushMatrix();
     translate(mouseX,mouseY);
-    rotate(a);
+    rotate(angle);
     image(img1,0,0);
   popMatrix();
 };
