@@ -13,5 +13,5 @@ setup = function() {
 };
 
 draw = function() {
-   img(char.img1,mouseX,mouseY);
+   image(char.img1,mouseX,mouseY);
 };
