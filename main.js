@@ -1,17 +1,18 @@
 // Stay dangereous.
 
-var char = {
+/*var char = {
   img1:loadImage("Character concept 2.png"),
   x:0,
   y:0,
   health:100,
   inventory:{}
-};
+};*/
 
 setup = function() {
+  img1=loadImage("Character concept 2.png");
   size(800,600);
 };
 
 draw = function() {
-   image(char.img1,mouseX,mouseY);
+   image(img1,mouseX,mouseY);
 };
