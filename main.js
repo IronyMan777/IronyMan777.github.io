@@ -2,21 +2,19 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png";*/
 // Stay dangereous.
 
-/*var char = {
-  img1:loadImage("Character concept 2.png"),
-  x:0,
-  y:0,
-  health:100,
-  inventory:{}
-};*/
-
 setup = function() {
-  img1=loadImage("Character concept 2.png");
+  img1=loadImage("Ship1");
   size(800,600);
+  frameRate(60);
 };
 
 draw = function() {
-  background(55);
-  image(img1,mouseX,mouseY);
+  background(20);
+  angle = atan2(pmouseY,mouseY,pmouseX,mouseX);
+  pushMatrix();
+    translate(mouseX,mouseY);
+    rotate(angle);
+    image(img1,0,0);
+  popMatrix();
 };
 }};
