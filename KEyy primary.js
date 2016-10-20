@@ -313,7 +313,7 @@ var button = function(x,y,w,h,txt,tar,func) {
         rect(x,y,w,h,10);
         fill(primaryc[0],primaryc[1],primaryc[2]);
         text(txt,x,y);
-        if (mouseIsPressed&&loctime>15) {
+        if (mousePressed&&loctime>15) {
             
             if (func === "laggy") {
                 if (laggy === true) {
@@ -448,7 +448,7 @@ var logo = function(type,tar) {
         rect(200,200,180,100,10);
         textFont(termfont,40);
         fill(0);
-        text("Heavy\nMK.II",200,200);
+        text("Heavy MK.II",200,200);
         textSize(20);
         text("Visuals online",200,50);
         textFont(termfont,10);
@@ -483,7 +483,7 @@ var logo = function(type,tar) {
     fill(0,0,0,255-loctime*2);
     rect(200,200,width,height);
     
-    if (mouseIsPressed&&loctime>15) {
+    if (mousePressed&&loctime>15) {
         loctime = 0;
         fight = false;
         loc = tar;
@@ -764,7 +764,7 @@ var heavychar = function(x,y,s,a) {
 var char = function(x,y,s,type,strength) {
     var a = atan2(mouseY-y,mouseX-x);
     if (gun===true) {
-        if (mouseIsPressed) {
+        if (mousePressed) {
             charshoot(2);
         }
     }
@@ -949,7 +949,7 @@ var nextday = function(tar) {
     textAlign(CENTER,CENTER);
     textFont(mainfont,50);
     text("Day "+d,200,200);
-    if (mouseIsPressed&&loctime>15) {
+    if (mousePressed&&loctime>15) {
         loctime = 0;
         loc = tar;
     }
@@ -987,7 +987,7 @@ var help = function() {
     charmove();
     headlights(charx,chary);*/
     
-    if (mouseIsPressed&&loctime > 15) {loc = 1;loctime = 0;}
+    if (mousePressed&&loctime > 15) {loc = 1;loctime = 0;}
 };
 var intro = function() {
         background(sback);
@@ -1010,7 +1010,7 @@ var intro = function() {
         
         if (introvars.time > 200) {
             loc = 1;
-        } else if (mouseIsPressed === true) {
+        } else if (mousePressed === true) {
             loc = 1;
         }
 };
@@ -1044,7 +1044,7 @@ var launch = function() {
     
     fill(0,0,0,255-loctime*2);
     rect(200,200,402,402);
-    if (mouseIsPressed&&loctime>15) {
+    if (mousePressed&&loctime>15) {
         loctime = 0;
         loc = 1.3;
     }
