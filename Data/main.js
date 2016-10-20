@@ -5,13 +5,13 @@ setup = function() {
 	charx = 400;
 	chary = 300;
 
-	var keys = [];
+	/*var keys = [];
 	keyPressed = function() {
 		keys[keyCode] = true;
 	};
 	keyReleased = function() {
 		keys[keyCode] = false;
-	};
+	};*/
 	
 	img1=loadImage("Data/Images/char1.jpg");
 	size(800,600);
