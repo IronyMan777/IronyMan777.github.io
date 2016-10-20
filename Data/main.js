@@ -24,7 +24,7 @@ draw = function() {
 	var a = atan2(chary-mouseY,charx-mouseX);
 	pushMatrix();
 		translate(charx,chary);
-		rotate(a+135);
+		rotate(a+225);
 	image(img1,-50,-50);
 	popMatrix();
 };
