@@ -1,5 +1,5 @@
 var sketchProc=function(processingInstance){ with (processingInstance){
-/*@pjs preload="Character concept 2.png";*/
+/*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
 
 setup = function() {
@@ -10,7 +10,7 @@ setup = function() {
 
 draw = function() {
   background(20);
-  angle = atan2(pmouseY,mouseY,pmouseX,mouseX);
+  angle = atan2(mouseY,pmouseY,mouseX,pmouseX);
   pushMatrix();
     translate(mouseX,mouseY);
     rotate(angle);
