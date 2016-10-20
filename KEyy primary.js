@@ -5,6 +5,7 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 // Don't look at this.
 
 size(400,400);
+frameRate(60);
 angleMode = "degrees";
 
 var version = "0.1 Alpha";
@@ -315,7 +316,7 @@ var button = function(x,y,w,h,txt,tar,func) {
         rect(x,y,w,h,10);
         fill(primaryc[0],primaryc[1],primaryc[2]);
         text(txt,x,y);
-        if (mousePressed&&loctime>15) {
+        if (mousePressed===true&&loctime>15) {
             
             if (func === "laggy") {
                 if (laggy === true) {
