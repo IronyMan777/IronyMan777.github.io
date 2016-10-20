@@ -3,7 +3,7 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 // Stay dangereous.
 
 setup = function() {
-  img1=loadImage("Ship1");
+  img1=loadImage("Ship1.png");
   size(800,600);
   frameRate(60);
 };
