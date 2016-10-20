@@ -6,14 +6,15 @@ setup = function() {
   img1=loadImage("Ship1.png");
   size(800,600);
   frameRate(60);
-  angle = 0;
   angleMode = "degrees";
 };
 
 draw = function() {
   background(255);
+  var a = atan2(mouseY-pmouseY,mouseX-pmouseX);
   pushMatrix();
     translate(mouseX,mouseY);
+    rotate(a);
     image(img1,0,0);
   popMatrix();
 };
