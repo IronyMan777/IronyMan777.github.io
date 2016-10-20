@@ -1,3 +1,4 @@
+var sketchProc=function(processingInstance){ with (processingInstance){
 // Stay dangereous.
 
 /*var char = {
@@ -14,5 +15,7 @@ setup = function() {
 };
 
 draw = function() {
-   image(img1,mouseX,mouseY);
+  background(55);
+  image(img1,mouseX,mouseY);
 };
+}};
