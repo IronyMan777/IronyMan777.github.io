@@ -7,6 +7,7 @@ setup = function() {
   size(800,600);
   frameRate(60);
   angle = 0;
+  angleMode = "degrees";
 };
 
 draw = function() {
