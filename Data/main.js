@@ -13,7 +13,7 @@ setup = function() {
 		keys[keyCode] = false;
 	};*/
 	
-	img1=loadImage("Data/Images/char2.jpg");
+	img1=loadImage("Data/Images/char2.png");
 	size(800,600);
 	frameRate(60);
 	angleMode = "degrees";
@@ -24,7 +24,7 @@ draw = function() {
 	var a = atan2(chary-mouseY,charx-mouseX);
 	pushMatrix();
 		translate(charx,chary);
-		rotate(a+180);
+		rotate(a+135);
 	image(img1,-50,-50);
 	popMatrix();
 };
