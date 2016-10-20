@@ -23,6 +23,7 @@ draw = function() {
 };
 keyPressed = function() {
 	keys[keyCode] = true;
+	println(keyCode);
 };
 keyReleased = function() {
 	keys[keyCode] = false;
