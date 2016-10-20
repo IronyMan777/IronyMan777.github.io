@@ -14,35 +14,23 @@ setup = function() {
 	charspeed = 2;
 	movstyle = "WASD";
 	
-	var charl = function() {
-	    charx -= charspeed;
-	};
-	var charr = function() {
-	    charx += charspeed;
-	};
-	var charu = function() {
-	    chary -= charspeed;
-	};
-	var chard = function() {
-	    chary += charspeed;
-	};
-	var charmovetopdown = function() {
+	charmovetopdown = function() {
 	    // WASD keys
-	    if (movstyle === "WASD") {
+	    if (movstyle == "WASD") {
 		if (keys[65]) {
-		    charl();
+		    charx-=charspeed;
 		}
 		if (keys[68]) {
-		    charr();
+		    charx+=charspeed;
 		}
 		if (keys[87]) {
-		    charu();
+		    chary-=charspeed;
 		}
 		if (keys[83]) {
-		    chard();
+		    chary+=charspeed;
 		}
 	    }
-	    if (movstyle === "arrows") {
+	    /*if (movstyle == "arrows") {
 		// Arrow keys
 		if (keys[37]) {
 		    charl();
@@ -56,7 +44,7 @@ setup = function() {
 		if (keys[40]) {
 		    chard();
 		}
-	    }
+	    }*/
 	};
 	};
 
