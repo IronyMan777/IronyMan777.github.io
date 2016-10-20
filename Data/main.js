@@ -2,7 +2,8 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
   
-var charpos = {x:0,y:0};
+charx = 400;
+chary = 300;
 
 keys = [];
 keyPressed = function() {
@@ -21,9 +22,9 @@ setup = function() {
 
 draw = function() {
 	background(255);
-	var a = atan2(charpos.y-mouseY,charpos.x-mouseX);
+	var a = atan2(chary-mouseY,charx-mouseX);
 	pushMatrix();
-		translate(charpos.x,charpos.y);
+		translate(charx,chary);
 		rotate(a+90);
 	image(img1,0,0);
 	popMatrix();
