@@ -2,7 +2,7 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
 setup = function() {
-	var charpos = {x:400,y:300};
+	charpos = {x:400,y:300};
 
 	var keys = [];
 	keyPressed = function() {
