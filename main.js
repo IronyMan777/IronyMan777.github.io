@@ -12,11 +12,8 @@ setup = function() {
 
 draw = function() {
   background(255);
-  a = atan2(mouseX,mouseY,pmouseX,pmouseY);
-  angle += a;
   pushMatrix();
     translate(mouseX,mouseY);
-    rotate(angle);
     image(img1,0,0);
   popMatrix();
 };
