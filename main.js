@@ -11,7 +11,7 @@ setup = function() {
 
 draw = function() {
   background(255);
-  var a = atan2(mouseY-pmouseY,mouseX-pmouseX);
+  var a = atan2(pmouseY-mouseY,pmouseX-mouseX);
   pushMatrix();
     translate(mouseX,mouseY);
     rotate(a);
