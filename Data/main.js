@@ -1,17 +1,10 @@
 var sketchProc=function(processingInstance){ with (processingInstance){
 /*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
+	keys = [];
 setup = function() {
 	charx = 400;
 	chary = 300;
-
-	/*var keys = [];
-	keyPressed = function() {
-		keys[keyCode] = true;
-	};
-	keyReleased = function() {
-		keys[keyCode] = false;
-	};*/
 	
 	img1=loadImage("Data/Images/char2.png");
 	size(800,600);
@@ -27,5 +20,11 @@ draw = function() {
 		rotate(a+225);
 	image(img1,-50,-50);
 	popMatrix();
+};
+keyPressed = function() {
+	keys[keyCode] = true;
+};
+keyReleased = function() {
+	keys[keyCode] = false;
 };
 }};
