@@ -30,23 +30,23 @@ setup = function() {
 		    chary+=charspeed;
 		}
 	    }
-	    /*if (movstyle == "arrows") {
+	    if (movstyle == "arrows") {
 		// Arrow keys
 		if (keys[37]) {
-		    charl();
+		    charx-=charspeed;
 		}
 		if (keys[39]) {
-		    charr();
+		    charx+=charspeed;
 		}
 		if (keys[38]) {
-		    charu();
+		    chary-=charspeed
 		}
 		if (keys[40]) {
-		    chard();
+		    chary+=charspeed
 		}
-	    }*/
+	    }
 	};
-	};
+};
 
 draw = function() {
 	background(240);
