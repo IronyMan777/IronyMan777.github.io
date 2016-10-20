@@ -1,7 +1,7 @@
 // Stay dangereous.
 
 var char = {
-  img1:loadImage("");
+  img1:loadImage("Character concept 2.png");
   x:0,
   y:0,
   health:100,
