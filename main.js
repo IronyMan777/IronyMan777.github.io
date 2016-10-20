@@ -12,7 +12,7 @@ setup = function() {
 
 draw = function() {
   background(255);
-  a = atan2(0,300,mouseX,pmouseX);
+  a = atan2(pmouseX,pmouseY,mouseX,mouseY);
   angle += a;
   pushMatrix();
     translate(mouseX,mouseY);
