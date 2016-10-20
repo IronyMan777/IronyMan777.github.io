@@ -12,7 +12,7 @@ setup = function() {
 	keyReleased = function() {
 		keys[keyCode] = false;
 	};
-	*/
+	
 	img1=loadImage("Data/Images/char1.jpg");
 	size(800,600);
 	frameRate(60);
