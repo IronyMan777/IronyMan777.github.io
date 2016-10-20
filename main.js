@@ -1,4 +1,5 @@
 var sketchProc=function(processingInstance){ with (processingInstance){
+/*@pjs preload="Character concept 2.png";*/
 // Stay dangereous.
 
 /*var char = {
