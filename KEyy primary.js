@@ -1,9 +1,11 @@
+
 var sketchProc=function(processingInstance){ with (processingInstance){
 
 // Messing around.
 // Don't look at this.
 
 size(400,400);
+angleMode = "degrees";
 
 var version = "0.1 Alpha";
 
