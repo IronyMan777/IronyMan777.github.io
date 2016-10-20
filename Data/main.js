@@ -13,14 +13,14 @@ setup = function() {
 		keys[keyCode] = false;
 	};
 	*/
-	img1=loadImage("Images/char1.jpg");
+	img1=loadImage("Data/Images/char1.jpg");
 	size(800,600);
 	frameRate(60);
 	angleMode = "degrees";
 };
 
 draw = function() {
-	background(255);
+	background(240);
 	/*var a = atan2(chary-mouseY,charx-mouseX);
 	pushMatrix();
 		translate(charx,chary);
