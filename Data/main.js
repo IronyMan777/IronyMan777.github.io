@@ -82,7 +82,7 @@ draw = function() {
 	}
 	popMatrix();
 	charmovetopdown();
-	image(walking,100,100);
+	aminate(charwalk,100,100,1);
 };
 keyPressed = function() {
 	keys[keyCode] = true;
