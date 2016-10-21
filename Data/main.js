@@ -88,11 +88,7 @@ draw = function() {
 	pushMatrix();
 		translate(charx,chary);
 		rotate(chara+225);
-	if (moving == false) {
 		image(img1,-50,-50);
-	} else {
-		image(walking,-50,-50);
-	}
 	popMatrix();
 	charmovetopdown();
 	displayamination(charwalktest,2,100,100);
