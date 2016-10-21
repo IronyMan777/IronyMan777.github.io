@@ -10,8 +10,11 @@ setup = function() {
 	charwalk = [loadImage("Data/Images/charwalk0"),loadImage("Data/Images/charwalk1"),loadImage("Data/Images/charwalk2")];
 	
 	aminate = function(imagen,x,y,s) {
-		for (var q=0;q<imagen.length;q++) {
+		for (var q=0;q<imagen.length+1;q++) {
 			image(imagen[q],x,y);
+			if (q>imagen.length) {
+				q = 0;
+			}
 		}
 	};
 	
