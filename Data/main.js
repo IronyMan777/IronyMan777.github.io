@@ -93,7 +93,7 @@ draw = function() {
 	}
 	popMatrix();
 	charmovetopdown();
-	displayamination(charwalk,3,100,100);
+	displayamination(charwalk,2,100,100);
 };
 keyPressed = function() {
 	keys[keyCode] = true;
