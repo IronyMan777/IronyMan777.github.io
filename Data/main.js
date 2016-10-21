@@ -50,7 +50,9 @@ setup = function() {
 
 draw = function() {
 	background(240);
-	var a = atan2(chary-mouseY,charx-mouseX);
+	if (mousePressed && mouseButton == RIGHT) {
+		var a = atan2(chary-mouseY,charx-mouseX);
+	}
 	pushMatrix();
 		translate(charx,chary);
 		rotate(a+225);
