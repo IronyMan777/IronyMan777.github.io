@@ -74,10 +74,11 @@ draw = function() {
 	}
 	popMatrix();
 	charmovetopdown();
+	image(walking,100,100);
 };
 keyPressed = function() {
 	keys[keyCode] = true;
-	println(keyCode);
+	//println(keyCode);
 };
 keyReleased = function() {
 	keys[keyCode] = false;
