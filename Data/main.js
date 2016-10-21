@@ -1,5 +1,4 @@
 var sketchProc=function(processingInstance){ with (processingInstance){
-/*@pjs preload="Character concept 2.png","Ship1.png";*/
 // Stay dangereous.
 	keys = [];
 setup = function() {
@@ -70,7 +69,7 @@ draw = function() {
 		rotate(chara+225);
 	if (moving == false) {
 		image(img1,-50,-50);
-	} else if (moving == true) {
+	} else {
 		image(walking,-50,-50);
 	}
 	popMatrix();
