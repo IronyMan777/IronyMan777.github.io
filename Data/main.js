@@ -17,6 +17,7 @@ setup = function() {
 		}
 		return images;
 	};*/
+	frame = 0;
 	displayamination = function(name,number,x,y) {
 		images = [];
 		for (var q=0;q<number;q++) {
