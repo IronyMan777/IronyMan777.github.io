@@ -7,6 +7,14 @@ setup = function() {
 	chara = 0;
 	moving = false;
 	
+	charwalk = [loadImage("Data/Images/charwalk0"),loadImage("Data/Images/charwalk1"),loadImage("Data/Images/charwalk2")];
+	
+	aminate = function(imagen,x,y,s) {
+		for (var q=0;q<imagen.length;q++) {
+			image(imagen[q],x,y);
+		}
+	};
+	
 	img1=loadImage("Data/Images/char2.png");
 	walking = loadImage("Data/Images/char3.gif");
 	size(800,600);
