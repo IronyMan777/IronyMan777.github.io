@@ -17,7 +17,7 @@ setup = function() {
 		}
 		return images[];
 	};
-	charwalktest = loadamination(charwalk,2);
+	//charwalktest = loadamination(charwalk,2);
 	frame = 0;
 	displayamination = function(name,number,x,y) {
 		images = [];
