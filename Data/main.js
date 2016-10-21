@@ -82,9 +82,9 @@ setup = function() {
 
 draw = function() {
 	background(240);
-	if (mousePressed && (mouseButton == RIGHT)) {
+	//if (mousePressed && (mouseButton == RIGHT)) {
 		chara = atan2(chary-mouseY,charx-mouseX);
-	}
+	//}
 	pushMatrix();
 		translate(charx,chary);
 		rotate(chara+225);
