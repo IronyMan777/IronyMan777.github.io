@@ -5,6 +5,7 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 setup = function() {
 	charx = 400;
 	chary = 300;
+	chara = 0;
 	
 	img1=loadImage("Data/Images/char2.png");
 	size(800,600);
@@ -51,11 +52,11 @@ setup = function() {
 draw = function() {
 	background(240);
 	if (mousePressed && mouseButton == RIGHT) {
-		var a = atan2(chary-mouseY,charx-mouseX);
+		chara = atan2(chary-mouseY,charx-mouseX);
 	}
 	pushMatrix();
 		translate(charx,chary);
-		rotate(a+225);
+		rotate(chara+225);
 	image(img1,-50,-50);
 	popMatrix();
 	charmovetopdown();
