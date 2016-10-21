@@ -9,7 +9,7 @@ setup = function() {
 	
 	//charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
 	
-	loadamination = function(name,number) {
+	/*loadamination = function(name,number) {
 		images = [];
 		for (var q=0;q<number;q++) {
 			filename = name + nf(q,4) + ".png";
@@ -26,7 +26,7 @@ setup = function() {
 		}
 		frame = (frame+1)%number;
 		image(images[frame],x,y);
-	};
+	};*/
 	
 	img1=loadImage("Data/Images/char2.png");
 	walking = loadImage("Data/Images/char3.gif");
