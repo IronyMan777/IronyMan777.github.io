@@ -17,7 +17,7 @@ setup = function() {
 		}
 		return images;
 	};
-	//charwalktest = loadamination(charwalk,2);
+	charwalktest = loadamination(charwalk,2);
 	frame = 0;
 	displayamination = function(name,number,x,y) {
 		images = [];
@@ -86,16 +86,16 @@ draw = function() {
 
 	pushMatrix();
 		translate(charx,chary);
-		rotate(chara+225);
+		rotate(chara+270);
 		image(img1,-50,-50);
 	popMatrix();
 	charmovetopdown();
-	//displayamination(charwalktest,2,100,100);
+	displayamination(charwalktest,2,100,100);
 };
 
 keyPressed = function() {
 	keys[keyCode] = true;
-	//println(keyCode);
+	println(keyCode);
 };
 keyReleased = function() {
 	keys[keyCode] = false;
