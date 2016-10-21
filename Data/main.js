@@ -15,7 +15,7 @@ setup = function() {
 			filename = name + nf(q,4) + ".png";
 			images[q] = loadImage(filename);
 		}
-		return images;
+		return images[];
 	};
 	charwalktest = loadamination(charwalk,2);
 	frame = 0;
