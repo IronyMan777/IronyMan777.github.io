@@ -7,7 +7,7 @@ setup = function() {
 	chara = 0;
 	moving = false;
 	
-	charwalk = [loadImage("Data/Images/charwalk0"),loadImage("Data/Images/charwalk1"),loadImage("Data/Images/charwalk2")];
+	charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
 	
 	/*loadamination = function(name,number) {
 		images = [];
@@ -20,7 +20,7 @@ setup = function() {
 	displayamination = function(name,number,x,y) {
 		images = [];
 		for (var q=0;q<number;q++) {
-			images[q] = name + nf(q,4) + ".png";
+			images[q] = name[q];
 		}
 		frame = (frame+1)%number;
 		image(images[frame],x,y);
