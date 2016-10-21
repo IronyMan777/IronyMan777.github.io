@@ -86,7 +86,7 @@ draw = function() {
 
 	pushMatrix();
 		translate(charx,chary);
-		rotate(chara+270);
+		rotate(chara+180);
 		image(img1,-50,-50);
 	popMatrix();
 	charmovetopdown();
