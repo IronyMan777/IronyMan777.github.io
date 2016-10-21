@@ -90,7 +90,7 @@ draw = function() {
 		image(img1,-50,-50);
 	popMatrix();
 	charmovetopdown();
-	displayamination(charwalktest,2,100,100);
+	//displayamination(charwalktest,2,100,100);
 };
 
 keyPressed = function() {
