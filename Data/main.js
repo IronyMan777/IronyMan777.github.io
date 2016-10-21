@@ -7,16 +7,17 @@ setup = function() {
 	chara = 0;
 	moving = false;
 	
-	charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
+	//charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
 	
-	/*loadamination = function(name,number) {
+	loadamination = function(name,number) {
 		images = [];
 		for (var q=0;q<number;q++) {
-			filename = name + nf(q,4) + ".gif";
+			filename = name + nf(q,4) + ".png";
 			images[q] = loadImage(filename);
 		}
 		return images;
-	};*/
+	};
+	charwalktest = loadamination(charwalk,2);
 	frame = 0;
 	displayamination = function(name,number,x,y) {
 		images = [];
@@ -94,7 +95,7 @@ draw = function() {
 	}
 	popMatrix();
 	charmovetopdown();
-	displayamination(charwalk,2,100,100);
+	displayamination(charwalktest,2,100,100);
 };
 keyPressed = function() {
 	keys[keyCode] = true;
