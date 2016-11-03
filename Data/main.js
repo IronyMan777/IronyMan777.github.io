@@ -119,17 +119,36 @@ setup = function() {
 				}
 			}
 		}
+		if (movstyle == "arrows") {
+			// Arrow keys
+			if (keys[37]) {
+			    chartx-=charspeed;
+				moving = true;
+			}
+			if (keys[39]) {
+			    chartx+=charspeed;
+				moving = true;
+			}
+			if (keys[38]) {
+			    charty-=charspeed;
+			    moving = true;
+			}
+			if (keys[40]) {
+			    charty+=charspeed;
+			    moving = true;
+			}
+		}
 		if (moving == false) {
-			if (chartx > charx+charspeed+1) {
+			if (chartx > charx+charspeed+2) {
 				chartx -= charspeed;
 			}
-			if (chartx < charx-charspeed-1) {
+			if (chartx < charx-charspeed-2) {
 				chartx += charspeed;
 			}
-			if (charty > chary+charspeed+1) {
+			if (charty > chary+charspeed+2) {
 				charty -= charspeed;
 			}
-			if (charty < chary-charspeed-1) {
+			if (charty < chary-charspeed-2) {
 				charty += charspeed;
 			}
 		}
