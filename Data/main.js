@@ -119,8 +119,18 @@ setup = function() {
 				}
 			}
 		} else {
-			chartx += cos(chara);
-			charty -= sin(chara);
+			if (chartx > charx) {
+				chartx -= charspeed;
+			}
+			if (chartx < charx) {
+				chartx += charspeed;
+			}
+			if (charty > chary) {
+				charty -= charspeed;
+			}
+			if (charty < chary) {
+				charty += charspeed;
+			}
 		}
 		chara = atan2(chary-charty,charx-chartx);
 		if (moving == true) {		
