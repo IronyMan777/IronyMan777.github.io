@@ -21,7 +21,7 @@ setup = function() {
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	aminate = function(imagen,x,y,s) {
-		frame = (frame+round(s)) % imagen.length;		
+		frame = (frame+round(s/5)) % imagen.length;		
 		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
@@ -30,7 +30,7 @@ setup = function() {
 		translate(x,y);
 		rotate(chara+180);
 			if (moving == true) {
-				aminate(charwalk,-50,-50,0.1);
+				aminate(charwalk,-50,-50,1);
 			} else {
 				image(charwalk[0],-50,-50);
 			}
@@ -120,16 +120,16 @@ setup = function() {
 			}
 		}
 		if (moving == false) {
-			if (chartx > charx+charspeed) {
+			if (chartx > charx+charspeed+1) {
 				chartx -= charspeed;
 			}
-			if (chartx < charx-charspeed) {
+			if (chartx < charx-charspeed-1) {
 				chartx += charspeed;
 			}
-			if (charty > chary+charspeed) {
+			if (charty > chary+charspeed+1) {
 				charty -= charspeed;
 			}
-			if (charty < chary-charspeed) {
+			if (charty < chary-charspeed-1) {
 				charty += charspeed;
 			}
 		}
