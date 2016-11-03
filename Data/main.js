@@ -118,7 +118,8 @@ setup = function() {
 					moving = true;
 				}
 			}
-		} else {
+		}
+		if (moving == false) {
 			if (chartx > charx) {
 				chartx -= charspeed;
 			}
