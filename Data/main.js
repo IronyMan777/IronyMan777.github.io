@@ -12,7 +12,7 @@ setup = function() {
 	frame = 0;
 	size(800,600);
 	frameRate(60);
-	angleMode = "degrees";
+	angleMode("degrees");
 	
 	charspeed = 2;
 	movstyle = "WASD";
