@@ -6,17 +6,22 @@ setup = function() {
 	chary = 300;
 	chara = 0;
 	moving = false;
+	frame = 0;
 	
 	charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
 	
 	aminate = function(imagen,x,y,btn,s) {
-		frame;
 		if (keys[btn] == true) {
 			frame = (frame + s) % imagen.length;
 		}
 		image(image[frame],x,y);
 	}
-	
+	char = function(x,y,speed,maxhealth,power) {
+		pushMatrix();
+		translate(charx,chary);
+			aminate(charwalk,0,0,65,1);
+		popMatrix();
+	};
 	/*loadamination = function(name,number) {
 		images = [];
 		for (var q=0;q<number;q++) {
@@ -35,9 +40,6 @@ setup = function() {
 		frame = (frame+1)%number;
 		image(images[frame],x,y);
 	};*/
-	
-	img1=loadImage("Data/Images/char2.png");
-	walking = loadImage("Data/Images/char3.gif");
 	size(800,600);
 	frameRate(60);
 	angleMode = "degrees";
@@ -92,11 +94,10 @@ draw = function() {
 	background(250);
 	chara = atan2(chary-mouseY,charx-mouseX);
 
-	pushMatrix();
-		translate(charx,chary);
-		rotate(chara+180);
-		image(img1,-50,-50);
-	popMatrix();
+	
+
+		char(charx,chary,0,charspeed,100,10);
+
 	charmovetopdown();
 	aminate(charwalk,100,100,38,1);
 };
