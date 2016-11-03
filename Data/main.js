@@ -120,16 +120,16 @@ setup = function() {
 			}
 		}
 		if (moving == false) {
-			if (chartx > charx) {
+			if (chartx > charx+charspeed) {
 				chartx -= charspeed;
 			}
-			if (chartx < charx) {
+			if (chartx < charx-charspeed) {
 				chartx += charspeed;
 			}
-			if (charty > chary) {
+			if (charty > chary+charspeed) {
 				charty -= charspeed;
 			}
-			if (charty < chary) {
+			if (charty < chary-charspeed) {
 				charty += charspeed;
 			}
 		}
