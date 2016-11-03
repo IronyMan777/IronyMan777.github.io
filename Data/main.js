@@ -20,9 +20,9 @@ setup = function() {
 	
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
-	aminate = function(imagen,x,y,s) {
+	aminate = function(imagen,x,y,float s) {
 		frame = (frame) % imagen.length;		
-		image(imagen[frame],x,y);
+		image(imagen[frame+floor(s)],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
 		//chara = atan2(y-mouseY,x-mouseX);
