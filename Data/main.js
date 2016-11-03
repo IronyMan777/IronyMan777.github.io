@@ -19,7 +19,7 @@ setup = function() {
 	
 	aminate = function(imagen,x,y,btn,s) {
 		if (keys[btn] == true) {
-			frame = (frame + s) % imagen.length;
+			frame = (frame + floor(s)) % imagen.length;
 		}
 		image(imagen[frame],x,y);
 	}
