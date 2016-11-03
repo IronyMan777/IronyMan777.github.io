@@ -169,7 +169,7 @@ setup = function() {
 			chary -= sin(chara)*charspeed;
 		}
 		fill(255);
-		//ellipse(chartx,charty,10,10);
+		ellipse(chartx,charty,10,10);
 	};
 };
 
