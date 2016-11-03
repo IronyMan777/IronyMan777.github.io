@@ -7,6 +7,13 @@ setup = function() {
 	chara = 0;
 	moving = false;
 	frame = 0;
+	size(800,600);
+	frameRate(60);
+	angleMode = "degrees";
+	
+	charspeed = 2;
+	movstyle = "WASD";
+	
 	
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
@@ -20,7 +27,7 @@ setup = function() {
 		chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara-90);
+		rotate(chara);
 			aminate(charwalk,50,-50,moving,0.1);
 		popMatrix();
 	};
@@ -42,13 +49,7 @@ setup = function() {
 		frame = (frame+1)%number;
 		image(images[frame],x,y);
 	};*/
-	size(800,600);
-	frameRate(60);
-	angleMode = "degrees";
-	
-	charspeed = 2;
-	movstyle = "WASD";
-	
+		
 	charmovetopdown = function() {
 	    	// WASD keys
 		moving = false;
