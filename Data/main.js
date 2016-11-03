@@ -30,7 +30,7 @@ setup = function() {
 		translate(x,y);
 		rotate(chara+radians(270));
 			if (moving == true) {
-				aminate(charwalk,-50,-50,1);
+				aminate(charwalk,-50,-50,0.5);
 			} else {
 				image(charwalk[0],-50,-50);
 			}
