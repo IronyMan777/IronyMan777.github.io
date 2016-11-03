@@ -152,15 +152,15 @@ setup = function() {
 				charty += charspeed;
 			}
 		}
-		if (chartx > charx+(2*charspeed)) {
+		if (chartx > charx+(2*charspeed)+1) {
 			chartx -= charspeed;
-		} if (chartx < charx-(2*charspeed)) {
+		} if (chartx < charx-(2*charspeed)-1) {
 			chartx += charspeed;
 		}
-		if (charty > chary+(2*charspeed)) {
+		if (charty > chary+(2*charspeed)+1) {
 			charty -= charspeed;
 		}
-		if (charty < chary-(2*charspeed)) {
+		if (charty < chary-(2*charspeed)-1) {
 			charty += charspeed;
 		}
 		chara = atan2(chary-charty,charx-chartx);
