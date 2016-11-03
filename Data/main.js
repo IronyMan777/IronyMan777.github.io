@@ -22,7 +22,7 @@ setup = function() {
 	
 	aminate = function(imagen,x,y,s) {
 		frame = (frame + s) % imagen.length;		
-		image(imagen[frame],x,y);
+		image(imagen[floor(frame)],x,y);
 	};
 	char = function(x,y,speed,maxhealth,power) {
 		//chara = atan2(y-mouseY,x-mouseX);
@@ -30,7 +30,7 @@ setup = function() {
 		translate(x,y);
 		rotate(chara+radians(270));
 			if (moving == true) {
-				aminate(charwalk,-50,-50,0.5);
+				aminate(charwalk,-50,-50,0.1);
 			} else {
 				image(charwalk[0],-50,-50);
 			}
