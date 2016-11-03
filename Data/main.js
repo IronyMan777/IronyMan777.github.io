@@ -11,7 +11,7 @@ setup = function() {
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	aminate = function(imagen,x,y,btn,s) {
-		if (keys[btn] == true) {
+		if (btn == true) {
 			frame = (frame + s) % imagen.length;
 		}
 		image(imagen[frame],x,y);
@@ -20,8 +20,8 @@ setup = function() {
 		chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara);
-			aminate(charwalk,-50,-50,65,1);
+		rotate(chara-90);
+			aminate(charwalk,50,-50,moving,0.1);
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
@@ -90,18 +90,16 @@ setup = function() {
 			}
 		}
 	};
+	charmoveturny = function() {
+		
+	};
 };
 
 draw = function() {
-	background(250);
-	
+	background(250);	
 
-	
-
-		char(charx,chary,0,charspeed,100,10);
-
+	char(charx,chary,0,charspeed,100,10);
 	charmovetopdown();
-	aminate(charwalk,100,100,38,1);
 };
 
 keyPressed = function() {
