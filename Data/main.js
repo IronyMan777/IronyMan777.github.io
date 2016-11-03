@@ -9,7 +9,7 @@ setup = function() {
 	
 	chara = 0;
 	moving = false;
-	int frame = 0;
+	frame = 0;
 	size(800,600);
 	frameRate(60);
 	angleMode = "degrees";
