@@ -22,7 +22,7 @@ setup = function() {
 	
 	aminate = function(imagen,x,y,btn,s) {
 		if (keys[btn] == true) {
-			frame = (frame + floor(s)) % imagen.length;
+			frame = (frame+s) % imagen.length;
 		}
 		image(imagen[frame],x,y);
 	}
@@ -30,8 +30,8 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara);
-			aminate(charwalk,-50,-50,65,0.1);
+		rotate(chara-90);
+			aminate(charwalk,50,-50,65,1);
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
