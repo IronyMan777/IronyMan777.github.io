@@ -157,8 +157,8 @@ setup = function() {
 			charx -= cos(chara)*charspeed;
 			chary -= sin(chara)*charspeed;
 		}
-		/*fill(255);
-		ellipse(chartx,charty,10,10);*/
+		fill(255);
+		ellipse(chartx,charty,10,10);
 	};
 };
 
