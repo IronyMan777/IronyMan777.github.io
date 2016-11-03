@@ -12,7 +12,7 @@ setup = function() {
 	frame = 0;
 	size(800,600);
 	frameRate(60);
-	angleMode("degrees");
+	angleMode = "degrees";
 	
 	charspeed = 2;
 	movstyle = "WASD";
@@ -28,7 +28,7 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara+120);
+		rotate(degrees(chara+120));
 			if (moving == true) {
 				aminate(charwalk,-50,-50,1);
 			} else {
