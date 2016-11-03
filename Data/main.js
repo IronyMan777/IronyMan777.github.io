@@ -116,7 +116,7 @@ setup = function() {
 			}
 		}
 		chara = atan2(chary-charty,charx-chartx);
-		charx += cos(chara)*charspeed;
+		charx -= cos(chara)*charspeed;
 		chary -= sin(chara)*charspeed;
 		fill(255);
 		ellipse(chartx,charty,10,10);
