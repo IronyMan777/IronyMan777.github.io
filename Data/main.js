@@ -17,9 +17,12 @@ setup = function() {
 		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
+		chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
-		translate(charx,chary);
-			aminate(charwalk,0,0,65,1);
+		translate(x,y);
+		rotate(chara);
+			//aminate(charwalk,0,0,65,1);
+		image(charwalk[0],0,0);
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
@@ -92,7 +95,7 @@ setup = function() {
 
 draw = function() {
 	background(250);
-	chara = atan2(chary-mouseY,charx-mouseX);
+	
 
 	
 
