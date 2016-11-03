@@ -18,7 +18,7 @@ setup = function() {
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	aminate = function(imagen,x,y,btn,s) {
-		if (btn == true) {
+		if (keys[btn] == true) {
 			frame = (frame + s) % imagen.length;
 		}
 		image(imagen[frame],x,y);
@@ -28,7 +28,7 @@ setup = function() {
 		pushMatrix();
 		translate(x,y);
 		rotate(chara);
-			aminate(charwalk,50,-50,moving,0.1);
+			aminate(charwalk,50,-50,65,0.1);
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
