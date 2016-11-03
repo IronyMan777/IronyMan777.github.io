@@ -21,8 +21,7 @@ setup = function() {
 		pushMatrix();
 		translate(x,y);
 		rotate(chara);
-			//aminate(charwalk,0,0,65,1);
-		image(charwalk[0],0,0);
+			aminate(charwalk,-50,-50,65,1);
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
