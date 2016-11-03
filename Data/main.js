@@ -27,7 +27,7 @@ setup = function() {
 		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
-		chara = atan2(y-mouseY,x-mouseX);
+		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
 		rotate(chara);
@@ -125,9 +125,9 @@ setup = function() {
 
 draw = function() {
 	background(250);	
-
-	char(charx,chary,0,charspeed,100,10);
 	charmoveturny();
+	char(charx,chary,0,charspeed,100,10);
+	
 };
 
 keyPressed = function() {
