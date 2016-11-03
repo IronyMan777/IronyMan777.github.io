@@ -30,7 +30,7 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara-90);
+		rotate(chara-180);
 			aminate(charwalk,50,-50,65,1);
 		popMatrix();
 	};
