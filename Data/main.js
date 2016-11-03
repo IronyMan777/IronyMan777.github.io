@@ -118,6 +118,8 @@ setup = function() {
 		chara = atan2(chary-charty,charx-chartx);
 		charx += cos(chara);
 		chary += sin(chara);
+		fill(255);
+		ellipse(chartx,charty,10,10);
 	};
 };
 
