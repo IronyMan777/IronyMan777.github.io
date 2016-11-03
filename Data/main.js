@@ -4,6 +4,9 @@ var sketchProc=function(processingInstance){ with (processingInstance){
 setup = function() {
 	charx = 400;
 	chary = 300;
+	chartx = 400;
+	charty = 300;
+	
 	chara = 0;
 	moving = false;
 	frame = 0;
@@ -92,7 +95,29 @@ setup = function() {
 		}
 	};
 	charmoveturny = function() {
-		
+		// WASD keys
+		moving = false;
+		if (movstyle == "WASD") {
+			if (keys[65]) {
+			    chartx-=charspeed;
+				moving = true;
+			}
+			if (keys[68]) {
+			    chartx+=charspeed;
+				moving = true;
+			}
+			if (keys[87]) {
+			    charty-=charspeed;
+				moving = true;
+			}
+			if (keys[83]) {
+			    charty+=charspeed;
+				moving = true;
+			}
+		}
+		chara = atan2(chary-charty,charx-chartx);
+		charx += cos(chara);
+		chary += sin(chara);
 	};
 };
 
@@ -100,7 +125,7 @@ draw = function() {
 	background(250);	
 
 	char(charx,chary,0,charspeed,100,10);
-	charmovetopdown();
+	charmoveturny();
 };
 
 keyPressed = function() {
