@@ -21,7 +21,7 @@ setup = function() {
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	aminate = function(imagen,x,y,s) {
-		frame = (frame+round(s)) % imagen.length;		
+		frame = (frame) % imagen.length;		
 		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
