@@ -28,7 +28,7 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara+150);
+		rotate(chara+120);
 			if (moving == true) {
 				aminate(charwalk,-50,-50,1);
 			} else {
