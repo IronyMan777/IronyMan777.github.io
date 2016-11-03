@@ -20,10 +20,8 @@ setup = function() {
 	
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
-	aminate = function(imagen,x,y,btn,s) {
-		if (keys[btn] == true) {
-			frame = (frame+s) % imagen.length;
-		}
+	aminate = function(imagen,x,y,s) {
+		frame = (frame+s) % imagen.length;		
 		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
@@ -31,7 +29,11 @@ setup = function() {
 		pushMatrix();
 		translate(x,y);
 		rotate(chara-180);
-			aminate(charwalk,50,-50,65,1);
+			if (moving == true) {
+				aminate(charwalk,-50,-50,1);
+			} else {
+				image(charwalk[0],-50,-50);
+			}
 		popMatrix();
 	};
 	/*loadamination = function(name,number) {
