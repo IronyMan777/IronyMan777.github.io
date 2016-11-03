@@ -139,16 +139,16 @@ setup = function() {
 			}
 		}
 		if (moving == false) {
-			if (chartx > charx+cos(chara)*charspeed) {
+			if (chartx > charx-cos(chara)*charspeed) {
 				chartx -= charspeed;
 			}
-			if (chartx < charx-cos(chara)*charspeed) {
+			if (chartx < charx+cos(chara)*charspeed) {
 				chartx += charspeed;
 			}
-			if (charty > chary+sin(chara)*charspeed) {
+			if (charty > chary-sin(chara)*charspeed) {
 				charty -= charspeed;
 			}
-			if (charty < chary-sin(chara)*charspeed) {
+			if (charty < chary+sin(chara)*charspeed) {
 				charty += charspeed;
 			}
 		}
@@ -158,7 +158,7 @@ setup = function() {
 			chary -= sin(chara)*charspeed;
 		}
 		fill(255);
-		ellipse(chartx,charty,10,10);
+		//ellipse(chartx,charty,10,10);
 	};
 };
 
