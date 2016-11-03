@@ -22,7 +22,7 @@ setup = function() {
 	
 	aminate = function(imagen,x,y) {
 		frame = (frame) % imagen.length;		
-		image(imagen[frame+0.1],x,y);
+		image(imagen[floor(frame+0.1)],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
 		//chara = atan2(y-mouseY,x-mouseX);
