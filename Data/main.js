@@ -139,16 +139,16 @@ setup = function() {
 			}
 		}
 		if (moving == false) {
-			if (chartx > charx+charspeed+2) {
+			if (chartx > charx+cos(chara)*charspeed) {
 				chartx -= charspeed;
 			}
-			if (chartx < charx-charspeed-2) {
+			if (chartx < charx-cos(chara)*charspeed) {
 				chartx += charspeed;
 			}
-			if (charty > chary+charspeed+2) {
+			if (charty > chary+sin(chara)*charspeed) {
 				charty -= charspeed;
 			}
-			if (charty < chary-charspeed-2) {
+			if (charty < chary-sin(chara)*charspeed) {
 				charty += charspeed;
 			}
 		}
