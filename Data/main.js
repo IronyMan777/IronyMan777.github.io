@@ -99,31 +99,36 @@ setup = function() {
 	charmoveturny = function() {
 		// WASD keys
 		moving = false;
-		if (movstyle == "WASD") {
-			if (keys[65]) {
-			    chartx-=charspeed;
-				moving = true;
+		if (keyPressed) {
+			if (movstyle == "WASD") {
+				if (keys[65]) {
+				    chartx-=charspeed;
+					moving = true;
+				}
+				if (keys[68]) {
+				    chartx+=charspeed;
+					moving = true;
+				}
+				if (keys[87]) {
+				    charty-=charspeed;
+					moving = true;
+				}
+				if (keys[83]) {
+				    charty+=charspeed;
+					moving = true;
+				}
 			}
-			if (keys[68]) {
-			    chartx+=charspeed;
-				moving = true;
-			}
-			if (keys[87]) {
-			    charty-=charspeed;
-				moving = true;
-			}
-			if (keys[83]) {
-			    charty+=charspeed;
-				moving = true;
-			}
+		} else {
+			chartx += cos(chara);
+			charty -= sin(chara);
 		}
 		chara = atan2(chary-charty,charx-chartx);
 		if (moving == true) {		
 			charx -= cos(chara)*charspeed;
 			chary -= sin(chara)*charspeed;
 		}
-		//fill(255);
-		//ellipse(chartx,charty,10,10);
+		fill(255);
+		ellipse(chartx,charty,10,10);
 	};
 };
 
