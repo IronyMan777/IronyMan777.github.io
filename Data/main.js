@@ -14,7 +14,7 @@ setup = function() {
 		if (keys[btn] == true) {
 			frame = (frame + s) % imagen.length;
 		}
-		image(image[frame],x,y);
+		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
 		pushMatrix();
