@@ -20,9 +20,9 @@ setup = function() {
 	
 	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
-	aminate = function(imagen,x,y) {
-		frame = (frame + 0.1) % imagen.length;		
-		image(imagen[floor(frame)],x,y);
+	aminate = function(imagen,x,y,s) {
+		frame = (frame + s) % imagen.length;		
+		image(imagen[frame],x,y);
 	}
 	char = function(x,y,speed,maxhealth,power) {
 		//chara = atan2(y-mouseY,x-mouseX);
@@ -30,7 +30,7 @@ setup = function() {
 		translate(x,y);
 		rotate(chara+radians(270));
 			if (moving == true) {
-				aminate(charwalk,-50,-50);
+				aminate(charwalk,-50,-50,1);
 			} else {
 				image(charwalk[0],-50,-50);
 			}
