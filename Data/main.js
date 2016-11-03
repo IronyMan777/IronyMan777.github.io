@@ -8,7 +8,7 @@ setup = function() {
 	moving = false;
 	frame = 0;
 	
-	charwalk = [loadImage("Data/Images/charwalk0000"),loadImage("Data/Images/charwalk0001"),loadImage("Data/Images/charwalk0002")];
+	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	aminate = function(imagen,x,y,btn,s) {
 		if (keys[btn] == true) {
