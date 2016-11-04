@@ -14,7 +14,7 @@ setup = function() {
 	frameRate(60);
 	angleMode = "degrees";
 	
-	charspeed = 2;
+	charspeed = 3;
 	movstyle = "WASD";
 	
 	
@@ -53,49 +53,8 @@ setup = function() {
 		}
 		frame = (frame+1)%number;
 		image(images[frame],x,y);
-	};*/
-		
-	charmovetopdown = function() {
-	    	// WASD keys
-		moving = false;
-		if (movstyle == "WASD") {
-			if (keys[65]) {
-			    charx-=charspeed;
-				moving = true;
-			}
-			if (keys[68]) {
-			    charx+=charspeed;
-				moving = true;
-			}
-			if (keys[87]) {
-			    chary-=charspeed;
-				moving = true;
-			}
-			if (keys[83]) {
-			    chary+=charspeed;
-				moving = true;
-			}
-		}
-		if (movstyle == "arrows") {
-			// Arrow keys
-			if (keys[37]) {
-			    charx-=charspeed;
-				moving = true;
-			}
-			if (keys[39]) {
-			    charx+=charspeed;
-				moving = true;
-			}
-			if (keys[38]) {
-			    chary-=charspeed;
-			    moving = true;
-			}
-			if (keys[40]) {
-			    chary+=charspeed;
-			    moving = true;
-			}
-		}
-	};
+	};*/	
+	
 	charmoveturny = function() {
 		// WASD keys
 		moving = false;
