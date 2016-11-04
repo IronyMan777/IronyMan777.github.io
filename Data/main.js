@@ -18,7 +18,17 @@ setup = function() {
 	movstyle = "WASD";
 	
 	
-	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
+	//charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
+	
+	loadStrip = function(name,number) {
+		oot = [];
+		for (i = 0; i < number; i++) {
+			oot[i]=(loadImage("Data/Images/"+name+i+".png"));
+		}
+		return oot[];
+	};
+	
+	charwalk = loadStrip(chartd,3);
 	
 	aminate = function(imagen,x,y,s) {
 		frame = (frame + s) % imagen.length;		
@@ -127,8 +137,8 @@ setup = function() {
 			charx -= cos(chara)*charspeed;
 			chary -= sin(chara)*charspeed;
 		}
-		fill(255);
-		ellipse(chartx,charty,10,10);
+		//fill(255);
+		//ellipse(chartx,charty,10,10);
 	};
 };
 
