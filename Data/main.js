@@ -18,7 +18,7 @@ setup = function() {
 	movstyle = "WASD";
 	
 	
-	//charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
+	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
 	
 	loadStrip = function(name,number) {
 		oot = [];
@@ -28,7 +28,7 @@ setup = function() {
 		return oot[];
 	};
 	
-	charwalk = loadStrip(chartd,3);
+	//charwalk = loadStrip(chartd,3);
 	
 	aminate = function(imagen,x,y,s) {
 		frame = (frame + s) % imagen.length;		
