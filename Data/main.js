@@ -38,10 +38,10 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		if (aiming == false) {
-			rotate(chara+radians(270));
-		} else if (aiming == true) {
+		if (aiming == true) {
 			rotate(chara2+radians(270));
+		} else {
+			rotate(chara+radians(270));
 		}
 			if (moving == true) {
 				aminate(charwalk,-50,-50,0.1);
