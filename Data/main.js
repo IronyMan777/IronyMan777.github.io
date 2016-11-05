@@ -38,7 +38,11 @@ setup = function() {
 		//chara = atan2(y-mouseY,x-mouseX);
 		pushMatrix();
 		translate(x,y);
-		rotate(chara+radians(270));
+		if (aiming == false) {
+			rotate(chara+radians(270));
+		} else {
+			rotate(chara2+radians(270));
+		}
 			if (moving == true) {
 				aminate(charwalk,-50,-50,0.1);
 			} else {
@@ -73,6 +77,14 @@ setup = function() {
 	charmoveturny = function() {
 		// WASD keys
 		moving = false;
+		aiming = false;
+		chara = atan2(chary-charty,charx-chartx);
+		chara2 = atan2(chary-mouseY,charx-mouseX);
+		if (mousePressed) {
+			if (mouseButton == "RIGHT") {
+				aiming = true;
+			}
+		}
 		if (keyPressed) {
 			if (movstyle == "WASD") {
 				if (keys[65]) {
@@ -137,7 +149,7 @@ setup = function() {
 		if (charty < chary-(2*charspeed)) {
 			charty += charspeed;
 		}
-		chara = atan2(chary-charty,charx-chartx);
+		
 		if (moving == true) {		
 			charx -= cos(chara)*charspeed;
 			chary -= sin(chara)*charspeed;
