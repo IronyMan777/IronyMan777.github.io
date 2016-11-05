@@ -46,6 +46,11 @@ setup = function() {
 			}
 		popMatrix();
 	};
+	shoot = function(x,y,tx,ty,speed,mode) {
+		fill(255,255,245,230);
+		bullets.push({x,y,tx,ty});
+		
+	};
 	/*loadamination = function(name,number) {
 		images = [];
 		for (var q=0;q<number;q++) {
