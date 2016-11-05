@@ -77,13 +77,15 @@ setup = function() {
 	charmoveturny = function() {
 		// WASD keys
 		moving = false;
-		aiming = false;
+		aiming;
 		chara = atan2(chary-charty,charx-chartx);
 		chara2 = atan2(chary-mouseY,charx-mouseX);
 		if (mousePressed) {
 			//if (mouseButton == RIGHT) {
 				aiming = true;
 			//}
+		} else {
+			aiming = false;
 		}
 		if (keyPressed) {
 			if (movstyle == "WASD") {
