@@ -81,7 +81,7 @@ setup = function() {
 		chara = atan2(chary-charty,charx-chartx);
 		chara2 = atan2(chary-mouseY,charx-mouseX);
 		if (mousePressed) {
-			if (mouseButton == "RIGHT") {
+			if (mouseButton == RIGHT) {
 				aiming = true;
 			}
 		}
