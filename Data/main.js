@@ -40,7 +40,7 @@ setup = function() {
 		translate(x,y);
 		if (aiming == false) {
 			rotate(chara+radians(270));
-		} else {
+		} else if (aiming == true) {
 			rotate(chara2+radians(270));
 		}
 			if (moving == true) {
@@ -81,9 +81,9 @@ setup = function() {
 		chara = atan2(chary-charty,charx-chartx);
 		chara2 = atan2(chary-mouseY,charx-mouseX);
 		if (mousePressed) {
-			if (mouseButton == RIGHT) {
+			//if (mouseButton == RIGHT) {
 				aiming = true;
-			}
+			//}
 		}
 		if (keyPressed) {
 			if (movstyle == "WASD") {
@@ -104,26 +104,27 @@ setup = function() {
 					moving = true;
 				}
 			}
+			if (movstyle == "arrows") {
+				// Arrow keys
+				if (keys[37]) {
+				    chartx-=charspeed;
+					moving = true;
+				}
+				if (keys[39]) {
+				    chartx+=charspeed;
+					moving = true;
+				}
+				if (keys[38]) {
+				    charty-=charspeed;
+				    moving = true;
+				}
+				if (keys[40]) {
+				    charty+=charspeed;
+				    moving = true;
+				}
+			}
 		}
-		if (movstyle == "arrows") {
-			// Arrow keys
-			if (keys[37]) {
-			    chartx-=charspeed;
-				moving = true;
-			}
-			if (keys[39]) {
-			    chartx+=charspeed;
-				moving = true;
-			}
-			if (keys[38]) {
-			    charty-=charspeed;
-			    moving = true;
-			}
-			if (keys[40]) {
-			    charty+=charspeed;
-			    moving = true;
-			}
-		}
+		
 		if (moving == false) {
 			if (chartx > charx-cos(chara)*charspeed) {
 				chartx -= charspeed;
