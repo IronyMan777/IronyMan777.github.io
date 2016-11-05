@@ -18,15 +18,15 @@ setup = function() {
 	movstyle = "WASD";
 	
 	
-	charwalk = [loadImage("Data/Images/charwalk0000.png"),loadImage("Data/Images/charwalk0001.png"),loadImage("Data/Images/charwalk0002.png")];
+	charwalk = [loadImage("Data/Images/chartd1.png"),loadImage("Data/Images/chartd2.png"),loadImage("Data/Images/chartd3.png")];
 	
-	loadStrip = function(name,number) {
+	/*loadStrip = function(name,number) {
 		oot = [];
 		for (i = 0; i < number; i++) {
 			oot[i]=(loadImage("Data/Images/"+name+i+".png"));
 		}
 		return oot[];
-	};
+	};*/
 	
 	//charwalk = loadStrip(chartd,3);
 	
