@@ -18,7 +18,7 @@ setup = function() {
 	movstyle = "WASD";
 	
 	
-	charwalk = [loadImage("Data/Images/chartd1.png"),loadImage("Data/Images/chartd2.png"),loadImage("Data/Images/chartd3.png")];
+	charwalk = [loadImage("Data/Images/chartd1.png"),loadImage("Data/Images/chartd2.png"),loadImage("Data/Images/chartd3.png"),loadImage("Data/Images/chartd4.png")];
 	
 	/*loadStrip = function(name,number) {
 		oot = [];
