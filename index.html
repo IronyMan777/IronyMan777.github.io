@@ -1,31 +1,31 @@
 <html>
-<head>	
-	<title>Not working yet!</title>
-	<style>
+	<head>	
+		<title>Lost</title>
+		<style>
 
-        body {
+		body {
 
-            background-color: rgb(55,55,55);
+		    background-color: rgb(55,55,55);
 
-	}
-	</style>
-</head>
+		}
+		</style>
+	</head>
 
-<body>
-	
-	<p align="center"> 
-      		<canvas id="mycanvas"></canvas> 
-    	</p>
-	
-	<script src="Data/processing-1.4.8.min.js"></script>
-	<script src="Data/main.js"></script>
-</body>
-	
-<script type="application/javascript">
-  var canvas = document.getElementById("mycanvas");
-  //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+	<body>
 
-  var processingInstance = new Processing(canvas, sketchProc); 
-</script>
+		<p align="center"> 
+			<canvas id="thecanvas"></canvas> 
+		</p>
+
+		<script src="Data/processing-1.4.8.min.js"></script>
+		<script src="Data/main.js"></script>
+	</body>
+
+	<script type="application/javascript">
+	  var canvas = document.getElementById("thecanvas");
+	  //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+
+	  var processingInstance = new Processing(canvas, sketchProc); 
+	</script>
 
 </html>
