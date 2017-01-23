@@ -6,10 +6,10 @@ class button {
 	string text;
 };
 
-void setup() {
+setup() {
 	
 };
 
-void draw() {
+draw() {
 	background(10,50,50);
 };
