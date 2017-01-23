@@ -6,10 +6,10 @@ class button {
 	string text;
 };
 
-setup() {
+setup = function() {
 	
 };
 
-draw() {
+draw = function() {
 	background(10,50,50);
 };
