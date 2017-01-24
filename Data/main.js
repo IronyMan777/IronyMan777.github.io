@@ -7,7 +7,7 @@ button = function(con) {
 };
 
 setup = function() {
-	startbutton = new button({x:width/2,y:height/2,width:150,height:80,text:"Start"});
+	startbutton = button({x:width/2,y:height/2,width:150,height:80,text:"Start"});
 };
 
 draw = function() {
