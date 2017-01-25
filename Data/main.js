@@ -9,6 +9,8 @@ button = function(con) {
 };
 
 setup = function() {
+	size(800,600);
+	frameRate(60);
 	startbutton = button({x:width/2,y:height/2,width:150,height:80,text:"Start"});
 };
 
