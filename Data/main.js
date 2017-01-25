@@ -1,9 +1,9 @@
 button = function(con) {
-	int x = con.x;
-	int y = con.y;
-	int width = con.width;
-	int height = con.height;
-	string text = con.text;
+	x = con.x;
+	y = con.y;
+	width = con.width;
+	height = con.height;
+	text = con.text;
 };
 
 setup = function() {
