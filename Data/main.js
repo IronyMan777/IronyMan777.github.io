@@ -1,3 +1,5 @@
+var sketchProc=function(processingInstance){ with (processingInstance){
+
 button = function(con) {
 	x = con.x;
 	y = con.y;
@@ -14,3 +16,5 @@ draw = function() {
 	background(10,50,50);
 	
 };
+
+}};
